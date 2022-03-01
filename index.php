@@ -50,13 +50,13 @@ $statement3 -> closeCursor();
 </head>
 
 <body>
-        <div>
-            <h1>Product Manager</h1>
+        <div class="productManager">
+            <h1 >Product Manager</h1>
         </div>
-        <div class='main'>
-            <h2>Product List</h2>
-            <div>
-                <h2><a href="categories.php">Categories</a></h2>
+        <h2 class="yellowWord" id="pageTitle">Product List</h2>
+        <div class='productlist_main'>
+            <div class="categoryList">
+                <h2><a href="categories.php" class="yellowWord" style="text-decoration:none;">Categories</a></h2>
 				<ul class="links">
 					<?php foreach ($categories as $category) : ?>
 					<li>
@@ -68,11 +68,12 @@ $statement3 -> closeCursor();
 				</ul>
 			</div>
             <div class="products">
+            <h2 class="yellowWord"><?php echo $category_name; ?></h2>
                     <table>
                         <tr>
-                            <th>Company</th>
-                            <th>Contact</th>
-                            <th>Country</th>
+                            <th>Code</th>
+                            <th>Name</th>
+                            <th>Price</th>
                         </tr>
                         <?php foreach ($products as $product) : ?>
                         <tr>
@@ -95,6 +96,7 @@ $statement3 -> closeCursor();
                         </tr>
                         <?php endforeach; ?>
                     </table>
+                    <br>
                     <a href="addProductForm.php?categoryID=<?php echo $category_id ?>">Add Product</a>
             </div>
         </div>

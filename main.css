@@ -1,4 +1,81 @@
 * {
     font-family: sans-serif;
-    color: brown;
 }
+body{
+    width: 70%;
+    border: 2px solid black;
+}
+.yellowWord{
+    color: rgb(209, 172, 83);
+}
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px dashed black;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 3px;
+	padding-bottom: 12px; 
+  }
+  ul {
+    list-style-type: none;
+}
+
+.productlist_main{
+    display: inline-flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 3em;
+}
+.products{
+    margin-left: 5em;
+}
+.productManager h1{
+    margin-left: 30px;
+}
+.productManager{
+    border-bottom: 2px solid rgb(110, 21, 40);
+}
+#pageTitle{
+    margin-left: 30px;
+    margin-top: 1em;
+}
+.categoryList h2{
+    margin-left: 30px;
+}
+footer{
+    text-align: end;
+    border-top: 2px solid rgb(110, 21, 40);
+}
+footer p{
+    margin-right: 10px;
+}
+.categoryList li{
+    padding: 2px;
+}
+.categoryList ul{
+    padding: 0;
+    margin-left: 30px;
+
+}
+.cate_main{
+    margin-left: 30px;
+    margin-bottom: 1em;
+}
+#list_product{
+    margin: 2em 0 2em 30px;
+}
+.addproduct_main{
+    margin-left: 30px;
+    margin-bottom: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
